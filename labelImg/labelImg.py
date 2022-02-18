@@ -113,7 +113,9 @@ class MainWindow(QMainWindow, WindowMixin):
         self.screencast = "https://youtu.be/p0nR2YsCY_U"
 
         # Load predefined classes to the list
-        self.load_predefined_classes(default_prefdef_class_file)
+        # self.load_predefined_classes(default_prefdef_class_file)
+        self.load_predefined_classes(r"labelImg\data\predefined_classes.txt")
+
 
         # Main widgets and related state.
         self.label_dialog = LabelDialog(parent=self, list_item=self.label_hist)
@@ -136,15 +138,15 @@ class MainWindow(QMainWindow, WindowMixin):
         use_default_label_container.setLayout(use_default_label_qhbox_layout)
 
         # Create a widget for edit and diffc button
-        self.diffc_button = QCheckBox(get_str('useDifficult'))
-        self.diffc_button.setChecked(False)
-        self.diffc_button.stateChanged.connect(self.button_state)
+        # self.diffc_button = QCheckBox(get_str('useDifficult'))
+        # self.diffc_button.setChecked(False)
+        # self.diffc_button.stateChanged.connect(self.button_state)
         self.edit_button = QToolButton()
         self.edit_button.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
 
         # Add some of widgets to list_layout
         list_layout.addWidget(self.edit_button)
-        list_layout.addWidget(self.diffc_button)
+        # list_layout.addWidget(self.diffc_button)
         list_layout.addWidget(use_default_label_container)
 
         # Create and add combobox for showing unique labels in group
@@ -235,7 +237,9 @@ class MainWindow(QMainWindow, WindowMixin):
 
         verify = action('Back', self.verify_image,
                         'space', '', '')
-        
+        helpButton = action('Help', self.help_button,
+                        'space', '', '')
+
         
 
         save = action(get_str('save'), self.save_file,
@@ -312,19 +316,19 @@ class MainWindow(QMainWindow, WindowMixin):
                           'Ctrl+-', '', '', enabled=False)
         zoom_org = action(get_str('originalsize'), partial(self.set_zoom, 100),
                           'Ctrl+=', '', '', enabled=False)
-        fit_window = action(get_str('fitWin'), self.set_fit_window,
-                            'Ctrl+F', '', '',
-                            checkable=True, enabled=False)
-        fit_width = action(get_str('fitWidth'), self.set_fit_width,
-                           'Ctrl+Shift+F', '', '',
-                           checkable=True, enabled=False)
+        # fit_window = action(get_str('fitWin'), self.set_fit_window,
+        #                     'Ctrl+F', '', '',
+        #                     checkable=True, enabled=False)
+        # fit_width = action(get_str('fitWidth'), self.set_fit_width,
+        #                    'Ctrl+Shift+F', '', '',
+        #                    checkable=True, enabled=False)
         # Group zoom controls into a list for easier toggling.
         zoom_actions = (self.zoom_widget, zoom_in, zoom_out,
-                        zoom_org, fit_window, fit_width)
+                        zoom_org)
         self.zoom_mode = self.MANUAL_ZOOM
         self.scalers = {
-            self.FIT_WINDOW: self.scale_fit_window,
-            self.FIT_WIDTH: self.scale_fit_width,
+            # self.FIT_WINDOW: self.scale_fit_window,
+            # self.FIT_WIDTH: self.scale_fit_width,
             # Set to one to scale to 100% when loading files.
             self.MANUAL_ZOOM: lambda: 1,
         }
@@ -366,13 +370,13 @@ class MainWindow(QMainWindow, WindowMixin):
                               createMode=create_mode, editMode=edit_mode, advancedMode=advanced_mode,
                               shapeLineColor=shape_line_color, shapeFillColor=shape_fill_color,
                               zoom=zoom, zoomIn=zoom_in, zoomOut=zoom_out, zoomOrg=zoom_org,
-                              fitWindow=fit_window, fitWidth=fit_width,
+                            #   fitWindow=fit_window, fitWidth=fit_width,
                               zoomActions=zoom_actions,
-                              fileMenuActions=(
-                                   open_dir, save, save_as, close, reset_all, quit),
+                            #   fileMenuActions=(
+                            #        open_dir, save, save_as, close, reset_all, quit),
                               beginner=(), advanced=(),
-                              editMenu=(edit, delete,
-                                        None, color1, self.draw_squares_option),
+                            #   editMenu=(edit, delete,
+                            #             None, color1, self.draw_squares_option),
                               beginnerContext=(create, edit,  delete),
                               advancedContext=(create_mode, edit_mode, edit,
                                                delete, shape_line_color, shape_fill_color),
@@ -381,10 +385,10 @@ class MainWindow(QMainWindow, WindowMixin):
                               onShapesPresent=(save_as, hide_all, show_all))
 
         self.menus = Struct(
-            file=self.menu(get_str('menu_file')),
-            edit=self.menu(get_str('menu_edit')),
-            view=self.menu(get_str('menu_view')),
-            help=self.menu(get_str('menu_help')),
+            # file=self.menu(get_str('menu_file')),
+            # edit=self.menu(get_str('menu_edit')),
+            # view=self.menu(get_str('menu_view')),
+            # help=self.menu(get_str('menu_help')),
             recentFiles=QMenu(get_str('menu_openRecent')),
             labelList=label_menu)
 
@@ -405,19 +409,18 @@ class MainWindow(QMainWindow, WindowMixin):
         self.display_label_option.setChecked(settings.get(SETTING_PAINT_LABEL, False))
         self.display_label_option.triggered.connect(self.toggle_paint_labels_option)
 
-        add_actions(self.menus.file,
-                    ( open_dir, change_save_dir, open_annotation, self.menus.recentFiles, save, save_format, save_as, close, reset_all, delete_image, quit))
-        add_actions(self.menus.help, (help_default, show_info, show_shortcut))
-        add_actions(self.menus.view, (
-            self.auto_saving,
-            self.single_class_mode,
-            self.display_label_option,
-            labels, advanced_mode, None,
-            hide_all, show_all, None,
-            zoom_in, zoom_out, zoom_org, None,
-            fit_window, fit_width))
+        # add_actions(self.menus.file,
+        #             ( open_dir, change_save_dir, open_annotation, self.menus.recentFiles, save, save_format, save_as, close, reset_all, delete_image, quit))
+        # add_actions(self.menus.help, (help_default, show_info, show_shortcut))
+        # add_actions(self.menus.view, (
+            # self.auto_saving,
+            # self.single_class_mode,
+            # self.display_label_option,
+            # labels, advanced_mode, None,
+            # hide_all, show_all, None,
+            # zoom_in, zoom_out, zoom_org, None))
 
-        self.menus.file.aboutToShow.connect(self.update_file_menu)
+        # self.menus.file.aboutToShow.connect(self.update_file_menu)
 
         # Custom context menu for the canvas widget:
         add_actions(self.canvas.menus[0], self.actions.beginnerContext)
@@ -428,7 +431,7 @@ class MainWindow(QMainWindow, WindowMixin):
         self.tools = self.toolbar('Tools')
         self.actions.beginner = (
              open,open_dir, change_save_dir, open_next_image, open_prev_image, save, save_format, None, create,  delete, None,
-            zoom_in, zoom, zoom_out, fit_window, fit_width,verify)
+            zoom_in, zoom, zoom_out,verify,helpButton)
 
         self.actions.advanced = (
              open_dir, change_save_dir, open_next_image, open_prev_image, save, save_format, None,
@@ -582,10 +585,10 @@ class MainWindow(QMainWindow, WindowMixin):
         add_actions(self.tools, tool)
         self.canvas.menus[0].clear()
         add_actions(self.canvas.menus[0], menu)
-        self.menus.edit.clear()
+        # self.menus.edit.clear()
         actions = (self.actions.create,) if self.beginner()\
             else (self.actions.createMode, self.actions.editMode)
-        add_actions(self.menus.edit, actions + self.actions.editMenu)
+        # add_actions(self.menus.edit, actions + self.actions.editMenu)
 
     def set_beginner(self):
         self.tools.clear()
@@ -1327,7 +1330,19 @@ class MainWindow(QMainWindow, WindowMixin):
         self.main=AppWindow()
         self.main.show()
         self.close()
+    def help_button(self, _value=True):
 
+        msgBox = QMessageBox()
+        msgBox.setIcon(QMessageBox.Information)
+        msgBox.setText("1. Config. - It is use to set all the configuration file \n 2. Open Dir - It is use to open a directory \n 3. Next Image -  It is used to access next image \n 4. Prev Image -  It is used to access previous image \n 5. Predict all - It is used to predict all the images \n 6. Back - It is used to access login page \n 7. Help - It gives Information of all the pages \n 8. Quit - It is used to quit the application ")
+        msgBox.setWindowTitle("QMessageBox Example")
+        msgBox.setStandardButtons(QMessageBox.Ok)
+        # msgBox.buttonClicked.connect(msgButtonClick)
+
+        returnValue = msgBox.exec()
+        if returnValue == QMessageBox.Ok:
+            print('OK clicked')
+        # msg_box_name.setIcon(QMessageBox.Information)
 
 
     
