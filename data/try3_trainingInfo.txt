@@ -1,0 +1,301 @@
+ CUDNN_HALF=1 
+yolov4-tiny-custom
+net.optimized_memory = 0 
+mini_batch = 4, batch = 64, time_steps = 1, train = 1 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 0 K-images (0 Kilo-batches_64) 
+Learning Rate: 0.00261, Momentum: 0.9, Decay: 0.0005
+ Detection layer: 30 - type = 28 
+ Detection layer: 37 - type = 28 
+Loaded: 8.045068 seconds
+]2;1/6000: loss=322.5 hours left=-1.0
+ 1: 322.480804, 322.480804 avg loss, 0.000000 rate, 11.705731 seconds, 64 images, -1.000000 hours left
+Loaded: 0.037546 seconds
+]2;2/6000: loss=322.6 hours left=32.9
+ 2: 322.595398, 322.492249 avg loss, 0.000000 rate, 1.985835 seconds, 128 images, 32.924917 hours left
+Loaded: 0.000096 seconds
+]2;3/6000: loss=322.4 hours left=32.6
+ 3: 322.438599, 322.486877 avg loss, 0.000000 rate, 2.081125 seconds, 192 images, 32.629380 hours left
+Loaded: 0.000110 seconds
+]2;4/6000: loss=322.6 hours left=32.3
+ 4: 322.583527, 322.496552 avg loss, 0.000000 rate, 1.985461 seconds, 256 images, 32.337757 hours left
+Loaded: 0.000069 seconds
+]2;5/6000: loss=323.0 hours left=32.0
+ 5: 323.041412, 322.551025 avg loss, 0.000000 rate, 1.943349 seconds, 320 images, 32.047451 hours left
+Loaded: 0.000090 seconds
+]2;6/6000: loss=322.4 hours left=31.8
+ 6: 322.374451, 322.533356 avg loss, 0.000000 rate, 2.137724 seconds, 384 images, 31.759340 hours left
+Loaded: 0.000098 seconds
+]2;7/6000: loss=322.5 hours left=31.5
+ 7: 322.536865, 322.533722 avg loss, 0.000000 rate, 2.161099 seconds, 448 images, 31.477342 hours left
+Loaded: 0.000098 seconds
+]2;8/6000: loss=322.6 hours left=31.2
+ 8: 322.629883, 322.543335 avg loss, 0.000000 rate, 2.299147 seconds, 512 images, 31.198548 hours left
+Loaded: 0.000083 seconds
+]2;9/6000: loss=322.9 hours left=30.9
+ 9: 322.937958, 322.582794 avg loss, 0.000000 rate, 2.350784 seconds, 576 images, 30.924833 hours left
+Loaded: 0.000101 seconds
+]2;10/6000: loss=322.8 hours left=30.7
+ 10: 322.826385, 322.607147 avg loss, 0.000000 rate, 2.350585 seconds, 640 images, 30.654707 hours left
+Loaded: 0.000103 seconds
+]2;11/6000: loss=322.6 hours left=30.4
+ 11: 322.588470, 322.605286 avg loss, 0.000000 rate, 2.429294 seconds, 704 images, 30.387274 hours left
+Loaded: 0.000100 seconds
+]2;12/6000: loss=322.9 hours left=30.1
+ 12: 322.902588, 322.635010 avg loss, 0.000000 rate, 2.428152 seconds, 768 images, 30.123818 hours left
+Loaded: 0.000104 seconds
+]2;13/6000: loss=322.8 hours left=29.9
+ 13: 322.829620, 322.654480 avg loss, 0.000000 rate, 2.430361 seconds, 832 images, 29.862971 hours left
+Loaded: 0.000140 seconds
+]2;14/6000: loss=322.4 hours left=29.6
+ 14: 322.369019, 322.625946 avg loss, 0.000000 rate, 2.568054 seconds, 896 images, 29.604762 hours left
+Loaded: 0.000142 seconds
+]2;15/6000: loss=322.8 hours left=29.4
+ 15: 322.792603, 322.642609 avg loss, 0.000000 rate, 2.598375 seconds, 960 images, 29.351419 hours left
+Loaded: 0.000128 seconds
+]2;16/6000: loss=322.7 hours left=29.1
+ 16: 322.684570, 322.646820 avg loss, 0.000000 rate, 2.594369 seconds, 1024 images, 29.101106 hours left
+Loaded: 0.001387 seconds
+]2;17/6000: loss=322.6 hours left=28.9
+ 17: 322.619965, 322.644135 avg loss, 0.000000 rate, 2.809768 seconds, 1088 images, 28.853223 hours left
+Loaded: 0.000166 seconds
+]2;18/6000: loss=322.8 hours left=28.6
+ 18: 322.765472, 322.656281 avg loss, 0.000000 rate, 3.123826 seconds, 1152 images, 28.611412 hours left
+Loaded: 0.000170 seconds
+]2;19/6000: loss=322.5 hours left=28.4
+ 19: 322.459839, 322.636627 avg loss, 0.000000 rate, 3.141829 seconds, 1216 images, 28.377213 hours left
+Loaded: 0.000167 seconds
+]2;20/6000: loss=322.5 hours left=28.1
+ 20: 322.525574, 322.625519 avg loss, 0.000000 rate, 3.077021 seconds, 1280 images, 28.145643 hours left
+Loaded: 0.000157 seconds
+]2;21/6000: loss=322.4 hours left=27.9
+ 21: 322.383606, 322.601318 avg loss, 0.000000 rate, 3.144090 seconds, 1344 images, 27.915304 hours left
+Loaded: 0.000183 seconds
+]2;22/6000: loss=322.4 hours left=27.7
+ 22: 322.360413, 322.577240 avg loss, 0.000000 rate, 3.127334 seconds, 1408 images, 27.688373 hours left
+Loaded: 0.000151 seconds
+]2;23/6000: loss=322.7 hours left=27.5
+ 23: 322.688812, 322.588409 avg loss, 0.000000 rate, 3.069037 seconds, 1472 images, 27.463426 hours left
+Loaded: 0.000167 seconds
+]2;24/6000: loss=322.4 hours left=27.2
+ 24: 322.415741, 322.571136 avg loss, 0.000000 rate, 3.371865 seconds, 1536 images, 27.239750 hours left
+Loaded: 0.000152 seconds
+]2;25/6000: loss=322.4 hours left=27.0
+ 25: 322.430298, 322.557068 avg loss, 0.000000 rate, 3.345526 seconds, 1600 images, 27.023330 hours left
+Loaded: 0.000163 seconds
+]2;26/6000: loss=322.6 hours left=26.8
+ 26: 322.586121, 322.559967 avg loss, 0.000000 rate, 3.368240 seconds, 1664 images, 26.808627 hours left
+Loaded: 0.000146 seconds
+]2;27/6000: loss=322.4 hours left=26.6
+ 27: 322.351593, 322.539124 avg loss, 0.000000 rate, 3.541897 seconds, 1728 images, 26.596439 hours left
+Loaded: 0.000168 seconds
+]2;28/6000: loss=322.7 hours left=26.4
+ 28: 322.708130, 322.556030 avg loss, 0.000000 rate, 3.464773 seconds, 1792 images, 26.389245 hours left
+Loaded: 0.000195 seconds
+]2;29/6000: loss=322.3 hours left=26.2
+ 29: 322.274414, 322.527863 avg loss, 0.000000 rate, 3.474485 seconds, 1856 images, 26.182834 hours left
+Loaded: 0.000173 seconds
+]2;30/6000: loss=322.4 hours left=26.0
+ 30: 322.387329, 322.513824 avg loss, 0.000000 rate, 3.540415 seconds, 1920 images, 25.978638 hours left
+Loaded: 0.000160 seconds
+]2;31/6000: loss=322.4 hours left=25.8
+ 31: 322.358246, 322.498260 avg loss, 0.000000 rate, 4.237760 seconds, 1984 images, 25.777568 hours left
+Loaded: 0.000127 seconds
+]2;32/6000: loss=322.5 hours left=25.6
+ 32: 322.548706, 322.503296 avg loss, 0.000000 rate, 3.963725 seconds, 2048 images, 25.590061 hours left
+Loaded: 0.000203 seconds
+]2;33/6000: loss=322.1 hours left=25.4
+ 33: 322.084412, 322.461395 avg loss, 0.000000 rate, 4.403840 seconds, 2112 images, 25.399874 hours left
+Loaded: 0.000162 seconds
+]2;34/6000: loss=321.8 hours left=25.2
+ 34: 321.788544, 322.394104 avg loss, 0.000000 rate, 4.430592 seconds, 2176 images, 25.218874 hours left
+Loaded: 0.000212 seconds
+]2;35/6000: loss=321.9 hours left=25.0
+ 35: 321.896454, 322.344330 avg loss, 0.000000 rate, 4.284509 seconds, 2240 images, 25.040114 hours left
+Loaded: 0.000133 seconds
+]2;36/6000: loss=321.9 hours left=24.9
+ 36: 321.933502, 322.303253 avg loss, 0.000000 rate, 3.938664 seconds, 2304 images, 24.860710 hours left
+Loaded: 0.000142 seconds
+]2;37/6000: loss=322.0 hours left=24.7
+ 37: 322.024139, 322.275330 avg loss, 0.000000 rate, 3.777645 seconds, 2368 images, 24.677358 hours left
+Loaded: 0.000163 seconds
+]2;38/6000: loss=321.5 hours left=24.5
+ 38: 321.517761, 322.199585 avg loss, 0.000000 rate, 4.014486 seconds, 2432 images, 24.493161 hours left
+Loaded: 0.000136 seconds
+]2;39/6000: loss=321.2 hours left=24.3
+ 39: 321.181885, 322.097809 avg loss, 0.000000 rate, 4.282209 seconds, 2496 images, 24.314719 hours left
+Loaded: 0.000179 seconds
+]2;40/6000: loss=321.3 hours left=24.1
+ 40: 321.253540, 322.013367 avg loss, 0.000000 rate, 4.142761 seconds, 2560 images, 24.142482 hours left
+Loaded: 0.000179 seconds
+]2;41/6000: loss=320.7 hours left=24.0
+ 41: 320.683319, 321.880371 avg loss, 0.000000 rate, 4.368908 seconds, 2624 images, 23.969647 hours left
+Loaded: 0.000181 seconds
+]2;42/6000: loss=320.6 hours left=23.8
+ 42: 320.585754, 321.750916 avg loss, 0.000000 rate, 4.235895 seconds, 2688 images, 23.802273 hours left
+Loaded: 0.000161 seconds
+]2;43/6000: loss=320.3 hours left=23.6
+ 43: 320.349731, 321.610809 avg loss, 0.000000 rate, 4.372310 seconds, 2752 images, 23.634359 hours left
+Loaded: 0.000195 seconds
+]2;44/6000: loss=320.3 hours left=23.5
+ 44: 320.254761, 321.475220 avg loss, 0.000000 rate, 5.021626 seconds, 2816 images, 23.470567 hours left
+Loaded: 0.000161 seconds
+]2;45/6000: loss=320.0 hours left=23.3
+ 45: 320.000549, 321.327759 avg loss, 0.000000 rate, 6.721679 seconds, 2880 images, 23.318946 hours left
+Loaded: 0.000211 seconds
+]2;46/6000: loss=319.4 hours left=23.2
+ 46: 319.395538, 321.134552 avg loss, 0.000000 rate, 4.406405 seconds, 2944 images, 23.196949 hours left
+Loaded: 0.000220 seconds
+]2;47/6000: loss=319.3 hours left=23.0
+ 47: 319.338104, 320.954895 avg loss, 0.000000 rate, 4.294525 seconds, 3008 images, 23.037862 hours left
+Loaded: 0.000150 seconds
+]2;48/6000: loss=318.9 hours left=22.9
+ 48: 318.869537, 320.746368 avg loss, 0.000000 rate, 6.463154 seconds, 3072 images, 22.878503 hours left
+Loaded: 0.000162 seconds
+]2;49/6000: loss=318.3 hours left=22.8
+ 49: 318.265472, 320.498291 avg loss, 0.000000 rate, 4.462442 seconds, 3136 images, 22.756580 hours left
+Loaded: 0.000129 seconds
+]2;50/6000: loss=318.3 hours left=22.6
+ 50: 318.305969, 320.279053 avg loss, 0.000000 rate, 4.368261 seconds, 3200 images, 22.602785 hours left
+Loaded: 0.000150 seconds
+]2;51/6000: loss=317.6 hours left=22.4
+ 51: 317.619995, 320.013153 avg loss, 0.000000 rate, 4.451826 seconds, 3264 images, 22.448959 hours left
+Loaded: 0.000149 seconds
+]2;52/6000: loss=316.9 hours left=22.3
+ 52: 316.945679, 319.706421 avg loss, 0.000000 rate, 4.726369 seconds, 3328 images, 22.298039 hours left
+Loaded: 0.000168 seconds
+]2;53/6000: loss=316.3 hours left=22.2
+ 53: 316.276703, 319.363464 avg loss, 0.000000 rate, 4.729462 seconds, 3392 images, 22.153153 hours left
+Loaded: 0.000172 seconds
+]2;54/6000: loss=315.6 hours left=22.0
+ 54: 315.628632, 318.989990 avg loss, 0.000000 rate, 5.309867 seconds, 3456 images, 22.009754 hours left
+Loaded: 0.000203 seconds
+]2;55/6000: loss=315.2 hours left=21.9
+ 55: 315.229614, 318.613953 avg loss, 0.000000 rate, 5.158852 seconds, 3520 images, 21.877362 hours left
+Loaded: 0.000157 seconds
+]2;56/6000: loss=314.4 hours left=21.7
+ 56: 314.434509, 318.196014 avg loss, 0.000000 rate, 4.404779 seconds, 3584 images, 21.743786 hours left
+Loaded: 0.000178 seconds
+]2;57/6000: loss=313.7 hours left=21.6
+ 57: 313.748535, 317.751282 avg loss, 0.000000 rate, 4.959941 seconds, 3648 images, 21.599081 hours left
+Loaded: 0.000165 seconds
+]2;58/6000: loss=313.0 hours left=21.5
+ 58: 312.965942, 317.272736 avg loss, 0.000000 rate, 5.467332 seconds, 3712 images, 21.464975 hours left
+Loaded: 0.000197 seconds
+]2;59/6000: loss=311.8 hours left=21.3
+ 59: 311.827179, 316.728180 avg loss, 0.000000 rate, 4.905318 seconds, 3776 images, 21.340571 hours left
+Loaded: 0.000189 seconds
+]2;60/6000: loss=311.1 hours left=21.2
+ 60: 311.080872, 316.163452 avg loss, 0.000000 rate, 5.152022 seconds, 3840 images, 21.208122 hours left
+Loaded: 0.000190 seconds
+]2;61/6000: loss=309.9 hours left=21.1
+ 61: 309.870087, 315.534119 avg loss, 0.000000 rate, 4.955325 seconds, 3904 images, 21.081054 hours left
+Loaded: 0.000208 seconds
+]2;62/6000: loss=308.7 hours left=21.0
+ 62: 308.717224, 314.852417 avg loss, 0.000000 rate, 5.694397 seconds, 3968 images, 20.951997 hours left
+Loaded: 0.000149 seconds
+]2;63/6000: loss=308.0 hours left=20.8
+ 63: 307.964081, 314.163574 avg loss, 0.000000 rate, 5.506795 seconds, 4032 images, 20.836408 hours left
+Loaded: 0.000178 seconds
+]2;64/6000: loss=306.2 hours left=20.7
+ 64: 306.172089, 313.364441 avg loss, 0.000000 rate, 5.670718 seconds, 4096 images, 20.718864 hours left
+Loaded: 0.000159 seconds
+]2;65/6000: loss=305.0 hours left=20.6
+ 65: 304.976074, 312.525604 avg loss, 0.000000 rate, 4.602246 seconds, 4160 images, 20.605839 hours left
+Loaded: 0.000151 seconds
+]2;66/6000: loss=303.7 hours left=20.5
+ 66: 303.695251, 311.642578 avg loss, 0.000000 rate, 5.285188 seconds, 4224 images, 20.475657 hours left
+Loaded: 0.001574 seconds
+]2;67/6000: loss=302.1 hours left=20.4
+ 67: 302.104980, 310.688812 avg loss, 0.000000 rate, 5.229686 seconds, 4288 images, 20.358022 hours left
+Loaded: 0.000178 seconds
+]2;68/6000: loss=300.4 hours left=20.2
+ 68: 300.406067, 309.660522 avg loss, 0.000000 rate, 4.941713 seconds, 4352 images, 20.240657 hours left
+Loaded: 0.000161 seconds
+]2;69/6000: loss=298.7 hours left=20.1
+ 69: 298.696075, 308.564087 avg loss, 0.000000 rate, 5.073529 seconds, 4416 images, 20.119684 hours left
+Loaded: 0.000167 seconds
+]2;70/6000: loss=297.3 hours left=20.0
+ 70: 297.309143, 307.438599 avg loss, 0.000000 rate, 5.408969 seconds, 4480 images, 20.002078 hours left
+Loaded: 0.000209 seconds
+]2;71/6000: loss=294.9 hours left=19.9
+ 71: 294.942963, 306.189026 avg loss, 0.000000 rate, 5.490549 seconds, 4544 images, 19.891160 hours left
+Loaded: 0.000153 seconds
+]2;72/6000: loss=293.5 hours left=19.8
+ 72: 293.472504, 304.917358 avg loss, 0.000000 rate, 5.097127 seconds, 4608 images, 19.782680 hours left
+Loaded: 0.000144 seconds
+]2;73/6000: loss=291.1 hours left=19.7
+ 73: 291.064575, 303.532074 avg loss, 0.000000 rate, 5.786970 seconds, 4672 images, 19.668790 hours left
+Loaded: 0.000186 seconds
+]2;74/6000: loss=289.3 hours left=19.6
+ 74: 289.347198, 302.113586 avg loss, 0.000000 rate, 5.589661 seconds, 4736 images, 19.567382 hours left
+Loaded: 0.000197 seconds
+]2;75/6000: loss=286.8 hours left=19.5
+ 75: 286.827148, 300.584930 avg loss, 0.000000 rate, 5.093731 seconds, 4800 images, 19.463726 hours left
+Loaded: 0.000184 seconds
+]2;76/6000: loss=285.0 hours left=19.4
+ 76: 284.985168, 299.024963 avg loss, 0.000000 rate, 5.467798 seconds, 4864 images, 19.352927 hours left
+Loaded: 0.000189 seconds
+]2;77/6000: loss=282.1 hours left=19.2
+ 77: 282.116913, 297.334167 avg loss, 0.000000 rate, 5.080777 seconds, 4928 images, 19.249378 hours left
+Loaded: 0.000176 seconds
+]2;78/6000: loss=279.9 hours left=19.1
+ 78: 279.864929, 295.587250 avg loss, 0.000000 rate, 5.136643 seconds, 4992 images, 19.140482 hours left
+Loaded: 0.000177 seconds
+]2;79/6000: loss=276.8 hours left=19.0
+ 79: 276.812225, 293.709747 avg loss, 0.000000 rate, 4.995198 seconds, 5056 images, 19.033580 hours left
+Loaded: 0.000456 seconds
+]2;80/6000: loss=274.3 hours left=18.9
+ 80: 274.271759, 291.765961 avg loss, 0.000000 rate, 5.276783 seconds, 5120 images, 18.925406 hours left
+Loaded: 0.000156 seconds
+]2;81/6000: loss=271.6 hours left=18.8
+ 81: 271.576385, 289.747009 avg loss, 0.000000 rate, 5.144107 seconds, 5184 images, 18.822934 hours left
+Loaded: 0.000163 seconds
+]2;82/6000: loss=268.5 hours left=18.7
+ 82: 268.500244, 287.622345 avg loss, 0.000000 rate, 4.874790 seconds, 5248 images, 18.719308 hours left
+Loaded: 0.000182 seconds
+]2;83/6000: loss=264.9 hours left=18.6
+ 83: 264.949829, 285.355103 avg loss, 0.000000 rate, 5.247623 seconds, 5312 images, 18.612488 hours left
+Loaded: 0.000201 seconds
+]2;84/6000: loss=261.9 hours left=18.5
+ 84: 261.937103, 283.013306 avg loss, 0.000000 rate, 4.880255 seconds, 5376 images, 18.512618 hours left
+Loaded: 0.000212 seconds
+]2;85/6000: loss=258.2 hours left=18.4
+ 85: 258.243347, 280.536316 avg loss, 0.000000 rate, 5.144349 seconds, 5440 images, 18.407696 hours left
+Loaded: 0.000200 seconds
+]2;86/6000: loss=255.0 hours left=18.3
+ 86: 254.967346, 277.979431 avg loss, 0.000000 rate, 5.578839 seconds, 5504 images, 18.308149 hours left
+Loaded: 0.000191 seconds
+]2;87/6000: loss=251.5 hours left=18.2
+ 87: 251.483948, 275.329895 avg loss, 0.000000 rate, 5.531636 seconds, 5568 images, 18.216720 hours left
+Loaded: 0.000153 seconds
+]2;88/6000: loss=247.4 hours left=18.1
+ 88: 247.437714, 272.540680 avg loss, 0.000000 rate, 4.921022 seconds, 5632 images, 18.125414 hours left
+Loaded: 0.000187 seconds
+]2;89/6000: loss=243.8 hours left=18.0
+ 89: 243.817200, 269.668335 avg loss, 0.000000 rate, 5.029225 seconds, 5696 images, 18.024979 hours left
+Loaded: 0.000157 seconds
+]2;90/6000: loss=239.6 hours left=17.9
+ 90: 239.562378, 266.657745 avg loss, 0.000000 rate, 5.243773 seconds, 5760 images, 17.927310 hours left
+Loaded: 0.000135 seconds
+]2;91/6000: loss=235.3 hours left=17.8
+ 91: 235.308167, 263.522797 avg loss, 0.000000 rate, 4.737892 seconds, 5824 images, 17.834127 hours left
+Loaded: 0.000215 seconds
+]2;92/6000: loss=231.0 hours left=17.7
+ 92: 231.046906, 260.275208 avg loss, 0.000000 rate, 5.770565 seconds, 5888 images, 17.733557 hours left
+Loaded: 0.000210 seconds
+]2;93/6000: loss=226.9 hours left=17.7
+ 93: 226.917496, 256.939423 avg loss, 0.000000 rate, 4.685133 seconds, 5952 images, 17.650928 hours left
+Loaded: 0.000152 seconds
+]2;94/6000: loss=222.7 hours left=17.6
+ 94: 222.742020, 253.519684 avg loss, 0.000000 rate, 4.896129 seconds, 6016 images, 17.551299 hours left
+Loaded: 0.000157 seconds
+]2;95/6000: loss=218.0 hours left=17.5
+ 95: 217.953430, 249.963058 avg loss, 0.000000 rate, 4.738981 seconds, 6080 images, 17.456114 hours left
+Loaded: 0.000190 seconds
+]2;96/6000: loss=213.0 hours left=17.4
+ 96: 213.049545, 246.271713 avg loss, 0.000000 rate, 5.269374 seconds, 6144 images, 17.359289 hours left

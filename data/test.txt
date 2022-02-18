@@ -1,0 +1,2 @@
+data/train/s05-s.bmp
+data/train/s71-s.bmp

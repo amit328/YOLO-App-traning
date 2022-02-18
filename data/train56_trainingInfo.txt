@@ -1,0 +1,9 @@
+ CUDNN_HALF=1 
+yolov4-tiny
+net.optimized_memory = 0 
+mini_batch = 64, batch = 64, time_steps = 1, train = 1 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+CUDA status Error: file: ./src/dark_cuda.c : () : line: 492 : build time: Feb  9 2022 - 12:11:58 
+
+ CUDA Error: out of memory
